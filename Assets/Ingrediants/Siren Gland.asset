@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dda8432eb0b7c924d9f1459366b196d8, type: 3}
-  m_Name: Poison
+  m_Script: {fileID: 11500000, guid: 86db676d8e2f73543914ad91ba0f6964, type: 3}
+  m_Name: Siren Gland
   m_EditorClassIdentifier: 
-  ingredients:
-  - {fileID: 11400000, guid: 0ca9861afbe535e40b35b48a632d4ffa, type: 2}
-  - {fileID: 11400000, guid: 5fb3c68c36e568943833e7a72b08f617, type: 2}
   Icon: {fileID: 0}
-  Name: Poison
-  Power: 1
+  Name: Siren Gland
+  Qty: 1

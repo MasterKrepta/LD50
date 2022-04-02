@@ -5,6 +5,7 @@ using UnityEngine;
 public class Helpers : MonoBehaviour
 {
     public  List<Ingredient> PossibleIngredients = new List<Ingredient>();
+    public List<Effect> PossibleEffects = new List<Effect>();
     public GameObject cardParent;
     public Card cardPrefab;
     
@@ -23,7 +24,20 @@ public class Helpers : MonoBehaviour
         }
 
         InitIngrediants();
-        
+        InitEffects();
+
+    }
+
+    private void InitEffects()
+    {
+        Effect[] effects = Resources.FindObjectsOfTypeAll<Effect>();
+
+        PossibleEffects.Clear(); // Sanity check
+
+        foreach (Effect e in effects)
+        {
+            PossibleEffects.Add(e);
+        }
     }
 
     private void InitCards()

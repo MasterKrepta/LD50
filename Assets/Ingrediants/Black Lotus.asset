@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 86db676d8e2f73543914ad91ba0f6964, type: 3}
-  m_Name: HillarysEmails
+  m_Name: Black Lotus
   m_EditorClassIdentifier: 
-  Icon: {fileID: 21300000, guid: 8e6282cdf477b52498e9533a74319886, type: 3}
-  Name: HillarysEmails
-  Qty: 536
+  Icon: {fileID: 0}
+  Name: Black Lotus
+  Qty: 1
