@@ -18,6 +18,13 @@ public class DropSlot : MonoBehaviour, IDropHandler
     {
         if (eventData.pointerDrag != null)
         {
+            if (activeIngredients.Contains(eventData.pointerDrag.gameObject.GetComponent<Card>().ingredient))
+            {
+                //Cannot add
+                //TODO add indicator you cant share duplicate items
+                eventData.pointerDrag.GetComponent<DragDrop>().Reset();
+                return;
+            }
             //TOdo Make dropped card not selectable
 
             eventData.pointerDrag.transform.SetParent(slotTransform);
@@ -25,6 +32,7 @@ public class DropSlot : MonoBehaviour, IDropHandler
             //Destroy(eventData.pointerDrag);
             Helpers.Instance.DealNewCard();
 
+           
             //TODO trigger Effect
             activeIngredients.Add(eventData.pointerDrag.gameObject.GetComponent<Card>().ingredient);
 

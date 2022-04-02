@@ -8,6 +8,9 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     RectTransform rectTransform;
     [SerializeField] Canvas canvas;
     CanvasGroup canvasGroup;
+
+    Vector3 startingPoint;
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -20,6 +23,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     }
     public void OnBeginDrag(PointerEventData eventData)
     {
+        startingPoint = transform.position;
         canvasGroup.alpha = .5f;
         canvasGroup.blocksRaycasts = false;
     }
@@ -30,10 +34,7 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         canvasGroup.blocksRaycasts = true;
     }
 
-    public void OnPointerDown(PointerEventData eventData)
-    {
-        
-    }
+    
 
     public void OnDrag(PointerEventData eventData)
     {
@@ -41,8 +42,13 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
         rectTransform.anchoredPosition += eventData.delta / canvas.scaleFactor;
     }
 
-    public void OnDrop(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData)
     {
         throw new System.NotImplementedException();
+    }
+
+    public void Reset()
+    {
+        transform.position = startingPoint;
     }
 }
