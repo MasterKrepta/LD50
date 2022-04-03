@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Draught of Comfort
   m_EditorClassIdentifier: 
   ingredients:
-  - {fileID: 11400000, guid: fb5fe3af454e29a4292d1430d83bdef7, type: 2}
-  - {fileID: 11400000, guid: 2d22820c193736c4cb0587095c3739a3, type: 2}
-  graphicChar: 65
-  color: {r: 0.15649244, g: 0.15667354, b: 0.1726736, a: 1}
+  - {fileID: 11400000, guid: 8c1ef5334098001468aa3792ef5a8e51, type: 2}
+  - {fileID: 11400000, guid: d588b908406403041b2ffac05e2a9e8a, type: 2}
+  graphicChar: 66
+  color: {r: 0.12594129, g: 0.11366714, b: 0.11576655, a: 1}
   Icon: {fileID: 0}
   Name: Draught of Comfort
+  Discovered: 0
   Power: 1

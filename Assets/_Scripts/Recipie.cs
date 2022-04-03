@@ -35,8 +35,8 @@ public class Recipie : MonoBehaviour
     }
     public void InitRecipie(Effect effect) 
     {
-        //TODO check for already existing recepie
-        print("Effect Valid");
+      
+       // print("Effect Valid");
         item1.text = effect.ingredients[0].name;
         item2.text = effect.ingredients[1].name;
         effectResult.text = effect.name;

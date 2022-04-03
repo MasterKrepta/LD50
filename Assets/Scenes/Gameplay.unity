@@ -251,6 +251,7 @@ GameObject:
   - component: {fileID: 90368294}
   - component: {fileID: 90368295}
   - component: {fileID: 90368296}
+  - component: {fileID: 90368297}
   m_Layer: 5
   m_Name: HealthBar
   m_TagString: Untagged
@@ -351,6 +352,102 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!82 &90368297
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90368293}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!224 &108598473 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1777415262030773143, guid: e7fc9fcfeb7696341a3a2278a320d055,
@@ -527,11 +624,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PossibleIngredients:
+  - {fileID: 11400000, guid: 0c911ff65a6c6414c875db749e86d03c, type: 2}
+  - {fileID: 11400000, guid: 5fb3c68c36e568943833e7a72b08f617, type: 2}
+  - {fileID: 11400000, guid: 8c1ef5334098001468aa3792ef5a8e51, type: 2}
+  - {fileID: 11400000, guid: d588b908406403041b2ffac05e2a9e8a, type: 2}
+  - {fileID: 11400000, guid: 824a8d2acaa8b8e4ebc6351f820eb41a, type: 2}
+  - {fileID: 11400000, guid: fb5fe3af454e29a4292d1430d83bdef7, type: 2}
+  - {fileID: 11400000, guid: 2f2f0814eeb56774c94fb7a7203e1f17, type: 2}
   - {fileID: 11400000, guid: 0ca9861afbe535e40b35b48a632d4ffa, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: 6f657d8146b6fd54ba3096a46edaaf48, type: 2}
+  - {fileID: 11400000, guid: d9e846942483194459cdd058c47b74f6, type: 2}
+  - {fileID: 11400000, guid: 18955e902453fd44fa5b59176d9ccfdb, type: 2}
+  - {fileID: 11400000, guid: 6558fcbf78820094bbdf93eb4246e798, type: 2}
+  - {fileID: 11400000, guid: f0a35c40bb3672b4e916099d2ed3a0b8, type: 2}
+  - {fileID: 11400000, guid: 2d22820c193736c4cb0587095c3739a3, type: 2}
+  - {fileID: 11400000, guid: b8415362eba13ef4e93f48b7b373b4a3, type: 2}
+  - {fileID: 11400000, guid: 6c158cd254eea6e4a910c8b1a79c3814, type: 2}
+  - {fileID: 11400000, guid: b2cf6dd070a282c43afafbdb739340a4, type: 2}
+  - {fileID: 11400000, guid: 80580aedc14733a41a71e1661a11496e, type: 2}
+  - {fileID: 11400000, guid: 3a7e31e9be88ee540a282beafaab2007, type: 2}
   - {fileID: 11400000, guid: b936a1a02ca93494aa83c8a427cd04c2, type: 2}
+  - {fileID: 11400000, guid: 6d7e3723028d1b74489cfbe7d3d50de0, type: 2}
+  - {fileID: 11400000, guid: 956d7aed74b9d854eaf47795224fc85c, type: 2}
+  - {fileID: 11400000, guid: 8875694047df8eb4caef1fd60d3a2974, type: 2}
+  - {fileID: 11400000, guid: 0a39d92ec1a72a443ad3934518941028, type: 2}
+  - {fileID: 11400000, guid: 281c88282b5da2941905be6c43c860de, type: 2}
+  - {fileID: 11400000, guid: 0124872c55ad53141b7d3e82b9ed0a7f, type: 2}
   PossibleEffects:
   - {fileID: 11400000, guid: d7f84cc68789e8d408c3b8b787839c55, type: 2}
+  - {fileID: 11400000, guid: 6dfa8dfc77b9f0a40815be878091c7a3, type: 2}
+  - {fileID: 11400000, guid: 89e946db265b2eb4cba8bb73afd797ef, type: 2}
+  - {fileID: 11400000, guid: a53a52a301216e644bc714801acfd481, type: 2}
+  - {fileID: 11400000, guid: ae020482373edef468f7539457982991, type: 2}
+  - {fileID: 11400000, guid: 0b889fd8b17948d499d9999f5de40eac, type: 2}
+  - {fileID: 11400000, guid: 811d84b216fcf934ca8437a9abd18dda, type: 2}
+  - {fileID: 11400000, guid: 6d1d72114aa83324baa1061dc4204e0d, type: 2}
+  - {fileID: 11400000, guid: ff92aac5ec2e72140a143130ffaa462f, type: 2}
+  - {fileID: 11400000, guid: ac8da780294d799419731ffd6e7066ec, type: 2}
+  - {fileID: 11400000, guid: 02990dec25075bf44a300f389462a7a2, type: 2}
+  - {fileID: 11400000, guid: 2e8f79565cb4b4e419abed0b3a235286, type: 2}
+  - {fileID: 11400000, guid: 5b88a62487053bd4ca9b2df30393b5cf, type: 2}
   cardParent: {fileID: 1107891411}
   cardPrefab: {fileID: -7183934439361731032, guid: e7fc9fcfeb7696341a3a2278a320d055,
     type: 3}
@@ -539,6 +671,9 @@ MonoBehaviour:
   ReferanceLibrary: {fileID: 1744023942}
   HealthUI: {fileID: 90368295}
   playerAnim: {fileID: 135387655}
+  clips:
+  - {fileID: 8300000, guid: afd04dd194aeae140b58f689484d0b36, type: 3}
+  - {fileID: 8300000, guid: 368ed5c1e36234a40a504410dd440fe6, type: 3}
   MaxHealth: 50
 --- !u!4 &135932379
 Transform:
@@ -2365,8 +2500,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 676}
+  m_AnchoredPosition: {x: 0, y: -14.2771}
+  m_SizeDelta: {x: 500, y: 661.7229}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1744023945
 MonoBehaviour:

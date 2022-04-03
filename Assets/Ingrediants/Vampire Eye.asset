@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 1
   graphicChar: 84
+  color: {r: 0.82341945, g: 0.80135095, b: 0.18419828, a: 1}
   Icon: {fileID: 0}
   Name: Vampire Eye
   Qty: 1

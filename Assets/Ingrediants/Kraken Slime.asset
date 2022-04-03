@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86db676d8e2f73543914ad91ba0f6964, type: 3}
   m_Name: Kraken Slime
   m_EditorClassIdentifier: 
-  Level: 3
+  Level: 2
   graphicChar: 73
-  color: {r: 0.17840494, g: 0.45879176, b: 0.5521186, a: 1}
+  color: {r: 0.35752305, g: 0.28853038, b: 0.3784123, a: 1}
   Icon: {fileID: 0}
   Name: Kraken Slime
   Qty: 1

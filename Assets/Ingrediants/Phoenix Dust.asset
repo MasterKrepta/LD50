@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 1
   graphicChar: 78
+  color: {r: 0.1968098, g: 0.1414688, b: 0.19076891, a: 1}
   Icon: {fileID: 0}
   Name: Phoenix Dust
   Qty: 1

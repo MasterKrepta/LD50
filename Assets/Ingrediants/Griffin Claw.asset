@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Level: 2
   graphicChar: 72
-  color: {r: 0.15508796, g: 0.10981288, b: 0.07868126, a: 1}
+  color: {r: 0.07300974, g: 0.2693838, b: 0.3791873, a: 1}
   Icon: {fileID: 0}
   Name: Griffin Claw
   Qty: 1

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Helpers : MonoBehaviour
 {
@@ -12,10 +13,11 @@ public class Helpers : MonoBehaviour
     public Card cardPrefab;
     public int CardLevel = 1;
     public GameObject ReferanceLibrary;
-
+    AudioSource healthAudio;
     public Slider HealthUI;
     Animator sliderAnim;
     public Animator playerAnim;
+    public AudioClip[] clips;
 
     [Space(20)]
     [Header("GamePlay Rules")]
@@ -26,6 +28,10 @@ public class Helpers : MonoBehaviour
         get { return _currentHealth; }
         set { 
             _currentHealth = value;
+            if (CurrentHealth <= 0)
+            {
+                SceneManager.LoadScene(2);
+            }
             HealthUI.value = CurrentHealth / MaxHealth;
         }
     }
@@ -50,6 +56,7 @@ public class Helpers : MonoBehaviour
 
         CurrentHealth = MaxHealth;
         sliderAnim = HealthUI.GetComponent<Animator>();
+        healthAudio = HealthUI.GetComponent<AudioSource>();
         
 
     }
@@ -62,6 +69,7 @@ public class Helpers : MonoBehaviour
 
         foreach (Effect e in effects)
         {
+            e.Discovered = false;
             PossibleEffects.Add(e);
         }
     }
@@ -78,20 +86,26 @@ public class Helpers : MonoBehaviour
 
     private void InitIngrediants()
     {
+        CardLevel = 1;
         Ingredient[] items = Resources.FindObjectsOfTypeAll<Ingredient>();
 
         PossibleIngredients.Clear(); // Sanity check
 
         foreach (Ingredient item in items)
         {
-            if (item.Level == 1)
+            //if (item.Level == 1)
+            //{
+            //    PossibleIngredients.Add(item);
+            //}
+            if (!PossibleIngredients.Contains(item))
             {
                 PossibleIngredients.Add(item);
             }
-            
+          
+
         }
     }
-
+    
     public Ingredient GetRandIngrediant()
     {
         return PossibleIngredients[Random.Range(0, PossibleIngredients.Count)];
@@ -141,6 +155,8 @@ public class Helpers : MonoBehaviour
 
     public void ApplyEffect(Effect effect)
     {
+        healthAudio.clip = clips[0];
+        healthAudio.Play();
         sliderAnim.Play("healthBarHeal");
         playerAnim.SetTrigger("HealDamage");
         CurrentHealth += effect.Power;
@@ -148,6 +164,8 @@ public class Helpers : MonoBehaviour
 
     public void ApplyDamage()
     {
+        healthAudio.clip = clips[1];
+        healthAudio.Play();
         sliderAnim.Play("healthBarDamage");
         playerAnim.SetTrigger("TakeDamage");
         CurrentHealth--;

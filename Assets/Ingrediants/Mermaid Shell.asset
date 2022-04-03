@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86db676d8e2f73543914ad91ba0f6964, type: 3}
   m_Name: Mermaid Shell
   m_EditorClassIdentifier: 
-  Level: 1
+  Level: 2
   graphicChar: 74
+  color: {r: 0.07943815, g: 0.06468902, b: 0.6328592, a: 1}
   Icon: {fileID: 0}
   Name: Mermaid Shell
   Qty: 1

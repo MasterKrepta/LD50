@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda8432eb0b7c924d9f1459366b196d8, type: 3}
+  m_Name: Philter of the Sun
+  m_EditorClassIdentifier: 
+  ingredients:
+  - {fileID: 11400000, guid: 8875694047df8eb4caef1fd60d3a2974, type: 2}
+  - {fileID: 11400000, guid: 0a39d92ec1a72a443ad3934518941028, type: 2}
+  graphicChar: 71
+  color: {r: 0.03657022, g: 0.010860169, b: 0.05623246, a: 1}
+  Icon: {fileID: 0}
+  Name: Philter of the Sun
+  Discovered: 0
+  Power: 1

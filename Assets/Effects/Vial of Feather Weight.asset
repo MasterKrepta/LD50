@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Vial of Feather Weight
   m_EditorClassIdentifier: 
   ingredients:
-  - {fileID: 11400000, guid: fb5fe3af454e29a4292d1430d83bdef7, type: 2}
-  - {fileID: 11400000, guid: 0c911ff65a6c6414c875db749e86d03c, type: 2}
-  graphicChar: 65
-  color: {r: 0.015399278, g: 0.110348776, b: 0.7773409, a: 1}
+  - {fileID: 11400000, guid: 6d7e3723028d1b74489cfbe7d3d50de0, type: 2}
+  - {fileID: 11400000, guid: 956d7aed74b9d854eaf47795224fc85c, type: 2}
+  graphicChar: 71
+  color: {r: 0.035084005, g: 0.031211784, b: 0.05350805, a: 1}
   Icon: {fileID: 0}
   Name: Vial of Feather Weight
-  Discovered: 1
+  Discovered: 0
   Power: 1

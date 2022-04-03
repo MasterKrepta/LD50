@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Tonic of Slowing
   m_EditorClassIdentifier: 
   ingredients:
-  - {fileID: 11400000, guid: 0ca9861afbe535e40b35b48a632d4ffa, type: 2}
-  - {fileID: 11400000, guid: 2d22820c193736c4cb0587095c3739a3, type: 2}
-  graphicChar: 65
-  color: {r: 0.6616907, g: 0.7801635, b: 0.40285146, a: 1}
+  - {fileID: 11400000, guid: 3a7e31e9be88ee540a282beafaab2007, type: 2}
+  - {fileID: 11400000, guid: b936a1a02ca93494aa83c8a427cd04c2, type: 2}
+  graphicChar: 70
+  color: {r: 0.8827764, g: 0.30005217, b: 0.4929916, a: 1}
   Icon: {fileID: 0}
   Name: Tonic of Slowing
-  Discovered: 1
-  Power: 1
+  Discovered: 0
+  Power: 2

@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86db676d8e2f73543914ad91ba0f6964, type: 3}
   m_Name: Minotaur Phallis
   m_EditorClassIdentifier: 
-  Level: 3
+  Level: 2
   graphicChar: 75
-  color: {r: 0.30204478, g: 0.51328534, b: 0.4231252, a: 1}
+  color: {r: 0.24704204, g: 0.26825908, b: 0.32394353, a: 1}
   Icon: {fileID: 0}
   Name: Minotaur Phallis
   Qty: 1

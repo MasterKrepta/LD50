@@ -13,10 +13,11 @@ MonoBehaviour:
   m_Name: Phial of Pain Relief
   m_EditorClassIdentifier: 
   ingredients:
-  - {fileID: 11400000, guid: fb5fe3af454e29a4292d1430d83bdef7, type: 2}
-  - {fileID: 11400000, guid: 2d22820c193736c4cb0587095c3739a3, type: 2}
-  graphicChar: 65
-  color: {r: 0.27029422, g: 0.026281694, b: 0.07760765, a: 1}
+  - {fileID: 11400000, guid: b8415362eba13ef4e93f48b7b373b4a3, type: 2}
+  - {fileID: 11400000, guid: 6c158cd254eea6e4a910c8b1a79c3814, type: 2}
+  graphicChar: 68
+  color: {r: 0.0115159415, g: 0.6810202, b: 0.51585364, a: 1}
   Icon: {fileID: 0}
   Name: Phial of Pain Relief
+  Discovered: 0
   Power: 1
