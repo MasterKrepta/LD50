@@ -124,17 +124,27 @@ public class CookBook : MonoBehaviour
 
             if (recipieComplete)
             {
+                Helpers.Instance.ApplyEffect(activeEffect);
                 //Generate Result
                 print("Effect works");
+                
+                Helpers.Instance.IncreaseLevel();
 
+                //Create Recepie
                 Recipie newRecipe = Instantiate(recepiePrefab, transform.parent.position, Quaternion.identity);
                 newRecipe.transform.SetParent(this.transform);
                 newRecipe.InitRecipie(activeEffect);
 
-                ////Save Referance Recepie
-                Recipie refRecipie = Instantiate(recepiePrefab, transform.parent.position, Quaternion.identity);
-                refRecipie.transform.SetParent(Helpers.Instance.ReferanceLibrary.transform);
-                refRecipie.InitRecipie(activeEffect);
+                if (activeEffect.Discovered == false)
+                {
+                    activeEffect.Discovered = true;
+                    ////Save Referance Recepie
+                    Recipie refRecipie = Instantiate(recepiePrefab, transform.parent.position, Quaternion.identity);
+                    refRecipie.transform.SetParent(Helpers.Instance.ReferanceLibrary.transform);
+                    
+                    refRecipie.InitRecipie(activeEffect);
+                }
+                
 
 
 
@@ -143,6 +153,7 @@ public class CookBook : MonoBehaviour
             }
             else
             {
+                Helpers.Instance.ApplyDamage();
                 Recipie newRecipe = Instantiate(recepiePrefab, transform.parent.position, Quaternion.identity);
                 newRecipe.transform.SetParent(this.transform);
                 newRecipe.InitRecipie(firstIngredient.name, secondIngredient.name, "None", item1Match, item2Match);

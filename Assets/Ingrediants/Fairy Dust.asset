@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86db676d8e2f73543914ad91ba0f6964, type: 3}
   m_Name: Fairy Dust
   m_EditorClassIdentifier: 
-  Level: 1
+  Level: 2
   graphicChar: 71
+  color: {r: 0.39672613, g: 0.6568928, b: 0.768698, a: 1}
   Icon: {fileID: 0}
   Name: Fairy Dust
   Qty: 1

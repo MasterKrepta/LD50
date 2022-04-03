@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86db676d8e2f73543914ad91ba0f6964, type: 3}
   m_Name: Siren Gland
   m_EditorClassIdentifier: 
-  Level: 1
+  Level: 3
   graphicChar: 80
+  color: {r: 0.18426548, g: 0.18869334, b: 0.19018856, a: 1}
   Icon: {fileID: 0}
   Name: Siren Gland
   Qty: 1

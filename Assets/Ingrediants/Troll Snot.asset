@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86db676d8e2f73543914ad91ba0f6964, type: 3}
   m_Name: Troll Snot
   m_EditorClassIdentifier: 
-  Level: 1
+  Level: 2
   graphicChar: 82
+  color: {r: 0.09045423, g: 0.06773268, b: 0.0016312067, a: 1}
   Icon: {fileID: 0}
   Name: Troll Snot
   Qty: 1

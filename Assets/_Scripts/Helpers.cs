@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class Helpers : MonoBehaviour
 {
@@ -8,8 +10,27 @@ public class Helpers : MonoBehaviour
     public List<Effect> PossibleEffects = new List<Effect>();
     public GameObject cardParent;
     public Card cardPrefab;
-
+    public int CardLevel = 1;
     public GameObject ReferanceLibrary;
+
+    public Slider HealthUI;
+    Animator sliderAnim;
+    public Animator playerAnim;
+
+    [Space(20)]
+    [Header("GamePlay Rules")]
+    private float _currentHealth;
+
+    public float CurrentHealth
+    {
+        get { return _currentHealth; }
+        set { 
+            _currentHealth = value;
+            HealthUI.value = CurrentHealth / MaxHealth;
+        }
+    }
+
+    public int MaxHealth = 50;
 
     public static Helpers Instance;
 
@@ -27,6 +48,10 @@ public class Helpers : MonoBehaviour
         InitIngrediants();
         InitEffects();
 
+        CurrentHealth = MaxHealth;
+        sliderAnim = HealthUI.GetComponent<Animator>();
+        
+
     }
 
     private void InitEffects()
@@ -39,7 +64,6 @@ public class Helpers : MonoBehaviour
         {
             PossibleEffects.Add(e);
         }
-        print("Effect init");
     }
 
     private void InitCards()
@@ -60,7 +84,11 @@ public class Helpers : MonoBehaviour
 
         foreach (Ingredient item in items)
         {
-            PossibleIngredients.Add(item);
+            if (item.Level == 1)
+            {
+                PossibleIngredients.Add(item);
+            }
+            
         }
     }
 
@@ -89,5 +117,39 @@ public class Helpers : MonoBehaviour
         }
         var card = Instantiate(cardPrefab, cardParent.transform.position, Quaternion.identity);
         card.transform.SetParent(cardParent.transform);
+    }
+
+    //GAMEPLAY 
+    public void IncreaseLevel()
+    {
+
+        //TODO generate Visual Effect
+        CardLevel++;
+
+        Ingredient[] items = Resources.FindObjectsOfTypeAll<Ingredient>();
+
+
+        foreach (Ingredient item in items)
+        {
+            if (item.Level == CardLevel)
+            {
+                PossibleIngredients.Add(item);
+            }
+
+        }
+    }
+
+    public void ApplyEffect(Effect effect)
+    {
+        sliderAnim.Play("healthBarHeal");
+        playerAnim.SetTrigger("HealDamage");
+        CurrentHealth += effect.Power;
+    }
+
+    public void ApplyDamage()
+    {
+        sliderAnim.Play("healthBarDamage");
+        playerAnim.SetTrigger("TakeDamage");
+        CurrentHealth--;
     }
 }

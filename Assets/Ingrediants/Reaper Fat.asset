@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86db676d8e2f73543914ad91ba0f6964, type: 3}
   m_Name: Reaper Fat
   m_EditorClassIdentifier: 
-  Level: 2
+  Level: 3
   graphicChar: 86
-  color: {r: 0.033044122, g: 0.035816316, b: 0.024175443, a: 1}
+  color: {r: 0.06513475, g: 0.23567046, b: 0.2765471, a: 1}
   Icon: {fileID: 0}
   Name: Reaper Fat
   Qty: 1

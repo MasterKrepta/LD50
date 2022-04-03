@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86db676d8e2f73543914ad91ba0f6964, type: 3}
   m_Name: Griffin Claw
   m_EditorClassIdentifier: 
-  Level: 1
+  Level: 2
   graphicChar: 72
+  color: {r: 0.15508796, g: 0.10981288, b: 0.07868126, a: 1}
   Icon: {fileID: 0}
   Name: Griffin Claw
   Qty: 1

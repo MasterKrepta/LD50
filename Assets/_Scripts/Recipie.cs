@@ -8,7 +8,7 @@ public class Recipie : MonoBehaviour
 {
     public Image icon;
 
-    public TMP_Text item1, item2, effectResult;
+    public TMP_Text item1, item2, effectResult, powerLevel;
     public Color randColor;
 
     private void OnEnable()
@@ -22,6 +22,7 @@ public class Recipie : MonoBehaviour
         item1.text = Ingrediant1;
         item2.text = Ingrediant2;
         effectResult.text = result;
+        powerLevel.text = "";
 
         if (item1Match)
         {
@@ -34,11 +35,14 @@ public class Recipie : MonoBehaviour
     }
     public void InitRecipie(Effect effect) 
     {
+        //TODO check for already existing recepie
         print("Effect Valid");
         item1.text = effect.ingredients[0].name;
         item2.text = effect.ingredients[1].name;
         effectResult.text = effect.name;
         icon.color = randColor;
+        powerLevel.text = effect.Power.ToString();
+        powerLevel.color = Color.red;
 
         item1.color = Color.green;
         item2.color = Color.green;

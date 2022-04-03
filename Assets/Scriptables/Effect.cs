@@ -11,6 +11,7 @@ public class Effect : ScriptableObject
     public Color color;
     public Sprite Icon;
     public string Name;
+    public bool Discovered = false;
     public float Power = 1;
 
     private void OnEnable()

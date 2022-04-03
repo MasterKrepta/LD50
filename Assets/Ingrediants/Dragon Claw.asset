@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86db676d8e2f73543914ad91ba0f6964, type: 3}
   m_Name: Dragon Claw
   m_EditorClassIdentifier: 
-  Level: 1
+  Level: 2
   graphicChar: 69
+  color: {r: 0.08013692, g: 0.7271226, b: 0.41806418, a: 1}
   Icon: {fileID: 0}
   Name: Dragon Claw
   Qty: 1

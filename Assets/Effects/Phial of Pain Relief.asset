@@ -10,11 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dda8432eb0b7c924d9f1459366b196d8, type: 3}
-  m_Name: Poison
+  m_Name: Phial of Pain Relief
   m_EditorClassIdentifier: 
   ingredients:
-  - {fileID: 11400000, guid: 0ca9861afbe535e40b35b48a632d4ffa, type: 2}
-  - {fileID: 11400000, guid: 5fb3c68c36e568943833e7a72b08f617, type: 2}
+  - {fileID: 11400000, guid: fb5fe3af454e29a4292d1430d83bdef7, type: 2}
+  - {fileID: 11400000, guid: 2d22820c193736c4cb0587095c3739a3, type: 2}
+  graphicChar: 65
+  color: {r: 0.27029422, g: 0.026281694, b: 0.07760765, a: 1}
   Icon: {fileID: 0}
-  Name: Poison
+  Name: Phial of Pain Relief
   Power: 1

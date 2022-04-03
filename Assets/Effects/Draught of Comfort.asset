@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda8432eb0b7c924d9f1459366b196d8, type: 3}
+  m_Name: Draught of Comfort
+  m_EditorClassIdentifier: 
+  ingredients:
+  - {fileID: 11400000, guid: fb5fe3af454e29a4292d1430d83bdef7, type: 2}
+  - {fileID: 11400000, guid: 2d22820c193736c4cb0587095c3739a3, type: 2}
+  graphicChar: 65
+  color: {r: 0.15649244, g: 0.15667354, b: 0.1726736, a: 1}
+  Icon: {fileID: 0}
+  Name: Draught of Comfort
+  Power: 1
