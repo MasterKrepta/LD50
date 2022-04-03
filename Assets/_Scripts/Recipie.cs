@@ -7,17 +7,18 @@ using UnityEngine.UI;
 public class Recipie : MonoBehaviour
 {
     public Image icon;
-    public TMP_Text log;
+
     public TMP_Text item1, item2, effectResult;
+    public Color randColor;
 
     private void OnEnable()
     {
         //log = GetComponentInChildren<TMP_Text>();
+        randColor = Random.ColorHSV();
         
     }
     public void InitRecipie(string Ingrediant1, string Ingrediant2, string result, bool item1Match, bool item2Match) //GOOD lord this is sloppy
     {
-        //log.text = $"{ Ingrediant1} + { Ingrediant2} = { result}";
         item1.text = Ingrediant1;
         item2.text = Ingrediant2;
         effectResult.text = result;
@@ -33,9 +34,11 @@ public class Recipie : MonoBehaviour
     }
     public void InitRecipie(Effect effect) 
     {
+        print("Effect Valid");
         item1.text = effect.ingredients[0].name;
         item2.text = effect.ingredients[1].name;
         effectResult.text = effect.name;
+        icon.color = randColor;
 
         item1.color = Color.green;
         item2.color = Color.green;

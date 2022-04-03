@@ -7,7 +7,14 @@ public class Effect : ScriptableObject
 {
     public List<Ingredient> ingredients;
 
+    public char graphicChar = 'A';
+    public Color color;
     public Sprite Icon;
     public string Name;
     public float Power = 1;
+
+    private void OnEnable()
+    {
+        color = Random.ColorHSV();
+    }
 }

@@ -9,11 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86db676d8e2f73543914ad91ba0f6964, type: 3}
-  m_Name: Cyclops Tooth
+  m_Script: {fileID: 11500000, guid: dda8432eb0b7c924d9f1459366b196d8, type: 3}
+  m_Name: Toxic
   m_EditorClassIdentifier: 
-  Level: 1
-  graphicChar: 67
+  ingredients:
+  - {fileID: 11400000, guid: fb5fe3af454e29a4292d1430d83bdef7, type: 2}
+  - {fileID: 11400000, guid: 2d22820c193736c4cb0587095c3739a3, type: 2}
   Icon: {fileID: 0}
-  Name: Cyclops Tooth
-  Qty: 1
+  Name: Toxic
+  Power: 1

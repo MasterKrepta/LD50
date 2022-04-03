@@ -8,7 +8,8 @@ public class Helpers : MonoBehaviour
     public List<Effect> PossibleEffects = new List<Effect>();
     public GameObject cardParent;
     public Card cardPrefab;
-    
+
+    public GameObject ReferanceLibrary;
 
     public static Helpers Instance;
 
@@ -38,6 +39,7 @@ public class Helpers : MonoBehaviour
         {
             PossibleEffects.Add(e);
         }
+        print("Effect init");
     }
 
     private void InitCards()
@@ -81,9 +83,11 @@ public class Helpers : MonoBehaviour
 
     public void DealNewCard()
     {
+        if (cardParent.transform.childCount == 6 )
+        {
+            return;
+        }
         var card = Instantiate(cardPrefab, cardParent.transform.position, Quaternion.identity);
         card.transform.SetParent(cardParent.transform);
-
-
     }
 }

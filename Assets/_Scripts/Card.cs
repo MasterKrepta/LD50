@@ -22,8 +22,10 @@ public class Card : MonoBehaviour
 
     private void InitCard()
     {
-        Icon.sprite = ingredient.Icon;
+        //Icon.sprite = ingredient.Icon;
+        Icon.color = ingredient.color;
         Name.text = ingredient.Name;
+        Icon.GetComponentInChildren<TMP_Text>().text = ingredient.graphicChar.ToString();
         Qty.text = $"Qty: {ingredient.Qty.ToString()}";
     }
 }

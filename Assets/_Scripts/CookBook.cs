@@ -131,6 +131,13 @@ public class CookBook : MonoBehaviour
                 newRecipe.transform.SetParent(this.transform);
                 newRecipe.InitRecipie(activeEffect);
 
+                ////Save Referance Recepie
+                Recipie refRecipie = Instantiate(recepiePrefab, transform.parent.position, Quaternion.identity);
+                refRecipie.transform.SetParent(Helpers.Instance.ReferanceLibrary.transform);
+                refRecipie.InitRecipie(activeEffect);
+
+
+
                 break;
 
             }
@@ -139,7 +146,6 @@ public class CookBook : MonoBehaviour
                 Recipie newRecipe = Instantiate(recepiePrefab, transform.parent.position, Quaternion.identity);
                 newRecipe.transform.SetParent(this.transform);
                 newRecipe.InitRecipie(firstIngredient.name, secondIngredient.name, "None", item1Match, item2Match);
-                print("test");
                 break;
             }
         }
